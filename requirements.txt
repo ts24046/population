@@ -1,4 +1,5 @@
 streamlit
+setuptools
 pyrebase4
 pandas
 numpy
