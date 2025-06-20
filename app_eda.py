@@ -212,17 +212,24 @@ class EDA:
 
         # 3) map Korean region names to English
         region_mapping = {
-            '전국': 'National',
-            '세종': 'Sejong',
-            '서울': 'Seoul',
-            '부산': 'Busan',
-            '대구': 'Daegu',
-            '인천': 'Incheon',
-            '광주': 'Gwangju',
-            '대전': 'Daejeon',
-            '울산': 'Ulsan',
-            '경기': 'Gyeonggi',
-            # add others as needed...
+            '전국':  'National',
+            '세종':  'Sejong',
+            '서울':  'Seoul',
+            '부산':  'Busan',
+            '대구':  'Daegu',
+            '인천':  'Incheon',
+            '광주':  'Gwangju',
+            '대전':  'Daejeon',
+            '울산':  'Ulsan',
+            '경기':  'Gyeonggi',
+            '강원':  'Gangwon',
+            '충북':  'Chungbuk',
+            '충남':  'Chungnam',
+            '전북':  'Jeonbuk',
+            '전남':  'Jeonnam',
+            '경북':  'Gyeongbuk',
+            '경남':  'Gyeongnam',
+            '제주':  'Jeju'
         }
         df['region_en'] = df['지역'].map(region_mapping).fillna(df['지역'])
 
